@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+</head>
+<body>
+    
+</body>
+<script>
+    //  heading 
+    let heading=document.createElement("h1");
+    heading.innerText= "HARIKA GADIREDDY";
+    heading.style.textAlign="center";
+    heading.style.color="red";
+    
+    // details
+    let details=document.createElement("p");
+    details.innerHTML="<b>Mobile:</b> +91 8498068386"+", "+" <b>Email:</b>gadireddyharika@gmail.com";
+    details.style.marginLeft="34%";
+   
+    // linkedin
+    let linkedin=document.createElement("p");
+    linkedin.innerHTML= "<b>LinkedIn:</b>https://www.linkedin.com/in/gadireddy-harika-6a5156309/";
+    linkedin.style.marginLeft="34%";
+    
+    // github
+    let github=document.createElement("p");
+    github.innerHTML= "<b>GitHub:</b>https://github.com/Gadireddyharika";
+    github.style.marginLeft="38%";
+
+    // Profile summary 
+    let Profile=document.createElement("h4");
+    Profile.innerHTML="PROFILE SUMMARY<hr>";
+    let content=document.createElement("p");
+    content.innerHTML="Aspiring software engineer currently building a strong foundation in key technologies like <b><mark>Python, JavaScript, HTML, CSS, and Bootstrap</mark></b>. Eager to apply these skills in real-world scenarios, I am actively learning software development principles and version control using Git and GitHub. Passionate about contributing to innovative projects, I aim to collaborate with diverse teams to deliver impactful technology solutions."
+
+    // education
+    let education=document.createElement("h4");
+    education.innerHTML="EDUCATION<hr>";
+    let content1=document.createElement("p");
+    content1.innerHTML="<b>Visvodaya Engineering College</b><br>Electronics and Communication Engineering <br><b> Sai Co-operative Junior College </b><br>Board of Intermediate Education (MPC)";  
+     
+     // years
+    let year=document.createElement("p");
+    year.innerHTML="<b>2020-2024</b><br>75%<br><b>2018-2020</b><br>81%<br>";
+    year.style.marginTop="-6%";
+    year.style.marginLeft="90%";
+
+    // project
+    let project=document.createElement("h4");
+    project.innerHTML="PROJECTS<hr>";
+    let guarder=document.createElement("h4");
+    guarder.innerText="Guarder Project| HTML, CSS, Bootstrap";
+    let head=document.createElement("p");
+    head.innerHTML="<b>Responsive Design:</b>The guarder project website uses flex and grid properties to create a responsive layout for various devices. And also using animations and media queries for responsive.";
+    let head1=document.createElement("p")
+    head1.innerHTML="<b>Navbar and Cards:</b>The site features a structured navbar, grid based cards and flex based images for displaying albedo information, enhancing navigation, and content presentation";
+    let head2=document.createElement("p")
+    head2.innerHTML="<b>Hand Gesture Recognition by using computer vision techniques:</b><br>This project implements <b><q>Hand Gesture Recognition</q></b> using computer vision techniques to create a touchless,naturalinterface for users to interact with machines.<br>Leveraging image acquisition through a camera, the system isolates hand movements using Open cv andprocesses them with deep learning algorithms (CNN).<br>Feature extraction, such as hand shape and finger positions, is used to classify gestures in real time.<br>This project enables gesture-based control for applications in areas like gaming, sign language interpretation,and virtual environments.";
+
+    //certificates
+    let certificates=document.createElement("h4");
+    certificates.innerHTML="CERTIFICATES<hr>";
+    let ulcer=document.createElement("ul");
+    let li1=document.createElement("li");
+    let li2=document.createElement("li");
+    li1.innerHTML="Introduction to the Internet of Things";
+    li2.innerHTML="Full Stack Paython";
+    ulcer.append(li1,li2)
+
+    // skills
+    let skills=document.createElement("h4");
+    skills.innerHTML="SKILLS<hr>";
+    ulski=document.createElement("ul");
+    let li3=document.createElement("li");
+    let li4=document.createElement("li");
+    let li5=document.createElement("li");
+    let li6=document.createElement("li");
+    li3.innerHTML="<b>Technical Skills:</b><i>HTML, CSS, JAVASCRIPT</i>";
+    li4.innerHTML="<b>Developer Tools:</b><i>Git, GitHub, VS code</i>";
+    li5.innerHTML="<b>Other Skills:</b>Word, PowerPoint, MS Office";
+    li6.innerHTML="<b>Soft Skills:</b>Communication, Public speaking, Problem-solving, Leadership, flexibility, Adaptability";
+    ulski.append(li3,li4,li5,li6);
+
+    // append
+     document.body.append(heading, details, linkedin, github, Profile, content, education, content1, year, project, guarder, head, head1, head2, certificates, ulcer, skills, ulski,);
+    </script>
+    </html>

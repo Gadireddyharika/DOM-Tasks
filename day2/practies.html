@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<img src="https://cdn.pixabay.com/photo/2021/08/25/20/42/field-6574455_640.jpg" alt="alternet"> 
+
+<button onclick="myFunction()">click me</button> 
+
+
+    
+</body>
+<script>
+
+    // image-content:text color and backgroundcolor
+    
+   var img=document.querySelector("img");
+   console.log(img.getAttribute("src"));
+   console.log(img.getAttribute("alternate"));
+   var content = document.createElement("h2");
+   content.innerHTML ="content added by script";
+   content.style.color="purple";
+   content.style.backgroundColor="pink";
+   console.log(content);
+   document.body.appendChild(content);
+   
+
+   function myFunction() {
+  var img = document.createElement("IMG");
+  img.setAttribute("src", "https://i0.wp.com/picjumbo.com/wp-content/uploads/beautiful-nature-mountain-scenery-with-flowers-free-photo.jpg?w=600&quality=80");
+  document.body.appendChild(img);
+}
+
+
+
+
+  
+
+
+   
+  
+</script>
+</html>

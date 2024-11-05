@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Front end developer</h2>
+    <P>HYPERTEXT MARKUP LANGUAGE</P>
+    <P>CASCADING STYLE SHEET</P>
+    <p>JAVASCRIPT</p>
+    <button onclick="fun()">click here</button>
+    <button onclick="fun1()">click me</button>
+    <button onclick="fun3()">click</button>
+
+    
+</body>
+<script>
+    // background color
+  function fun(){
+    document.body.style.backgroundColor="pink";
+
+  }
+// text color
+  function fun1(){
+    let content =document.getElementsByTagName("p");
+ for (let i = 0; i < content.length; i++) {
+        content[i].style.color = "red";
+   }
+}
+
+  // create element
+ var new1 = document.createElement("h2");
+ new1.innerHTML ="content added by script";
+ new1.style.color="purple";
+ console.log(new1);
+ document.body.appendChild(new1);
+
+
+// bgcolor generator
+let  arr = ["red", "blue", "green", "skyblue"];
+let count=0;
+function fun3(){
+    document.body.style.backgroundColor=arr[count];
+    count++;
+
+}
+// repeat
+if(count==arr.length-1){
+    count[0];
+}
+
+// create text node
+var mydiv=document.getElementById("mydiv");
+var textNode=document.createTextNode("This is a dynamically created text node.");
+mydiv.appendChild(textNode);
+
+// create list tags
+var ul=document.createElement("ul");
+var li1=document.createElement("li");
+var li2=document.createElement("li");
+var li3=document.createElement("li");
+li1.innerHTML="HTML";
+li2.innerHTML="CSS";
+li3.innerHTML="js";
+ul.append(li1,li2.li3);
+// console.log(ul);
+
+document.body.appendChild(ul);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+
+</script>
+</html>
